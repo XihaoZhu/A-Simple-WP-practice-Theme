@@ -1,0 +1,183 @@
+/* Theme Name: Nick_Personal
+Author: Xihao_Zhu
+Version:1.0
+*/
+
+* {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  a {
+    color: inherit;
+  }
+}
+
+.white-background {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.main-box {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  .container-main {
+    width: 60vw;
+      .search {
+        font-size: larger;
+        font-family:cursive ;
+      }
+      .list {
+        background-color: #fff;
+        padding: 5px 20px;
+        margin: 10px;
+        border-radius: 25px;
+        a:hover{
+          color: rgb(0, 128, 255);
+        }
+        .time {
+          color: grey;
+          font-size: small;
+        }
+      }
+      .navigation {
+        margin-top: 30px;
+      }
+      .page-numbers {
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .page-numbers:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+    .widgets-content{
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      .wp-calendar-table {
+        margin: auto;
+      }
+      ul {
+        padding: 20px;
+        li:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+
+/* For header */
+header {
+  .container {
+    margin-top: 32px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    .name {
+      font-weight: bold;
+    }
+    #s {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+    #searchsubmit {
+      width: 80px;
+      height: 25px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #searchsubmit:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .screen-reader-text {
+        display: none;
+    }
+    .navi {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          margin-left: 10px;
+          padding: 5px 10px;
+          border-radius: 10px;
+          color: rgb(77, 118, 255);
+        }
+        li:hover {
+          background-color: rgb(77, 118, 255);
+          color: white;
+        }
+      }
+    }
+  }
+  .big-container {
+    height: 75vh;
+    width: 100vw;
+    background-image: url("./assets/images/0175.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/* for comments */
+.comments {
+  display: grid;
+  .comment-list {
+    margin: 10px;
+    width: 100%;
+    border-bottom: dashed rgb(138, 138, 138) 2px;
+    border-radius: 5px;
+    .avatar {
+      float: left;
+    }
+    .comment_content{
+      margin-left: 20px;
+      float: left;
+      /* background-color: rebeccapurple; */
+      .comment_author {
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+    .edit-line {
+      display: flex;
+      min-width: 100px;
+      justify-content: space-between;
+      float: right;
+      margin-left: 50px;
+      /* background-color: green; */
+    }
+    .comment-text {
+      margin: 10px;
+      width: 100%;
+      float: left;
+      /* background-color: pink; */
+    }
+  }
+
+}
